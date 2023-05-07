@@ -1,0 +1,7 @@
+.section--product {
+  padding: 48px 0;
+
+  @include breakpoint-up("md") {
+    padding: 64px 0;
+  }
+}

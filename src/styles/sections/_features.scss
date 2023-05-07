@@ -1,0 +1,14 @@
+.section--features {
+  padding: 48px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  @include breakpoint-up("md") {
+    padding: 64px 0;
+  }
+
+  @include breakpoint-up("lg") {
+    flex-direction: row;
+  }
+}

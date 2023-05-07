@@ -1,0 +1,27 @@
+@import "../assets/fonts/poppins/style.css";
+
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+
+@import "./base/reboot";
+@import "./base/base";
+
+@import "./components/navbar";
+@import "./components/hero";
+@import "./components/statistics";
+@import "./components/offer";
+@import "./components/features";
+@import "./components/button";
+@import "./components/product";
+@import "./components/clients";
+@import "./components/client";
+@import "./components/client-logos";
+@import "./components/client-logo";
+@import "./components/cta";
+@import "./components/footer";
+
+@import "./sections/features";
+@import "./sections/stats";
+@import "./sections/product";
+@import "./sections/clients";
+@import "./sections/cta";

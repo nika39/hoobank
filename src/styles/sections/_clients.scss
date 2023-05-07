@@ -1,0 +1,21 @@
+.section--clients {
+  padding: 48px 0;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 436.52px;
+    height: 544.07px;
+    left: 100%;
+    top: 0;
+    background: linear-gradient(90deg, #1a2980 0%, #26d0ce 100%);
+    filter: blur(325px);
+    border-radius: 200px;
+    transform: rotate(47.46deg);
+  }
+
+  @include breakpoint-up("md") {
+    padding: 64px 0;
+  }
+}

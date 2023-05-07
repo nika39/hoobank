@@ -1,0 +1,93 @@
+:root {
+  --color-black: #00040f;
+  --color-aqua: #00f6ff;
+  --color-light-aqua: rgba(9, 151, 124, 0.1);
+  --color-silver: #bebbbb;
+  --gradient-aqua: linear-gradient(
+    157.81deg,
+    #def9fa -43.27%,
+    #bef3f5 -21.24%,
+    #9dedf0 12.19%,
+    #7de7eb 29.82%,
+    #5ce1e6 51.94%,
+    #33bbcf 90.29%
+  );
+  --gradient-dark: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
+  --breakpoint-xl: 1000px;
+}
+
+body {
+  background-color: var(--color-black);
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  &:hover {
+    transition: color 300ms;
+  }
+}
+
+.text-gradient {
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #def9fa 0.89%,
+    #bef3f5 17.23%,
+    #9dedf0 42.04%,
+    #7de7eb 55.12%,
+    #5ce1e6 71.54%,
+    #0fc8e4 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gradient {
+  &--aqua {
+    background-image: var(--gradient-aqua);
+  }
+
+  &--dark {
+    background-image: var(--gradient-dark);
+  }
+}
+
+.padding {
+  padding-left: 24px;
+  padding-right: 24px;
+
+  @include breakpoint-up("md") {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+
+  @include breakpoint-up("lg") {
+    padding-left: 138px;
+    padding-right: 138px;
+  }
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+
+  @media (min-width: 1700px) {
+    max-width: map-get($breakpoints-up, "xl");
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translatey(15%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translatey(0);
+  }
+}
+
+.light-boundary {
+  overflow-x: hidden;
+}

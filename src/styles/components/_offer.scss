@@ -1,0 +1,28 @@
+.offer {
+  @include breakpoint-up("lg") {
+    width: 50%;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 40px;
+
+    @include breakpoint-up("xl") {
+      font-size: 48px;
+      letter-spacing: 0.01em;
+      line-height: 160%;
+    }
+  }
+
+  &__meta {
+    color: var(--color-silver);
+    margin-top: 24px;
+    font-size: 18px;
+    line-height: 170%;
+    letter-spacing: 0.01em;
+  }
+
+  .button {
+    margin-top: 48px;
+  }
+}

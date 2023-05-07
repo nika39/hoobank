@@ -1,0 +1,37 @@
+.statistics {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  @include breakpoint-up("xs") {
+    flex-direction: row;
+  }
+
+  @include breakpoint-up("md") {
+    padding: 0 12px;
+  }
+
+  @include breakpoint-up("lg") {
+    padding: 0 24px;
+  }
+
+  &__digit {
+    font-weight: 600;
+    font-size: 40px;
+  }
+
+  &__name {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+
+    @include breakpoint-up("xs") {
+      margin-left: 16px;
+    }
+
+    @include breakpoint-up("lg") {
+      margin-left: 26px;
+    }
+  }
+}

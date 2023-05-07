@@ -1,0 +1,39 @@
+.section--stats {
+  margin-bottom: 80px;
+
+  .statistics-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    @include breakpoint-down("md") {
+      > :not(.stats__divider) ~ :not(.stats__divider) {
+        margin-top: 24px;
+      }
+    }
+
+    @include breakpoint-up("sm") {
+      margin: 0 -24px;
+    }
+
+    @include breakpoint-up("md") {
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+
+    @include breakpoint-up("lg") {
+      justify-content: space-between;
+    }
+  }
+
+  .stats__divider {
+    width: 1.5px;
+    height: 14px;
+    background: var(--color-silver);
+
+    @include breakpoint-down("lg") {
+      display: none;
+    }
+  }
+}

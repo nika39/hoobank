@@ -1,0 +1,63 @@
+.client {
+  max-width: 360px;
+  border-radius: 20px;
+  padding: 32px 24px;
+
+  @include breakpoint-up("md") {
+    padding: 48px 40px;
+  }
+
+  &:hover {
+    background: linear-gradient(
+      144.39deg,
+      #ffffff -278.56%,
+      #6d6d6d -78.47%,
+      #11101d 91.61%
+    );
+    backdrop-filter: blur(5px);
+  }
+
+  &__body {
+    margin-top: 40px;
+    font-size: 14px;
+    line-height: 180%;
+    letter-spacing: 0.02em;
+
+    @include breakpoint-up("md") {
+      font-size: 18px;
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+  }
+
+  &__image {
+    flex-shrink: 0;
+
+    img {
+      width: 48px;
+      height: 48px;
+      border-radius: 9999px;
+    }
+  }
+
+  &__meta {
+    margin-left: 16px;
+  }
+
+  &__name {
+    font-size: 18px;
+    line-height: 32px;
+
+    @include breakpoint-up("md") {
+      font-size: 20px;
+    }
+  }
+
+  &__position {
+    color: var(--color-silver);
+  }
+}

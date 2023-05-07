@@ -1,0 +1,94 @@
+.navbar {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  &__logo {
+    img {
+      width: 118px;
+      height: 32px;
+    }
+  }
+
+  &__toggler {
+    @media (min-width: map-get($breakpoints-up, "lg")) {
+      display: none;
+    }
+
+    &-bars {
+      font-size: 24px;
+    }
+
+    &-x {
+      display: none;
+      font-size: 30px;
+    }
+
+    .navbar--is-open &-bars {
+      display: none;
+    }
+
+    .navbar--is-open &-x {
+      display: block;
+    }
+  }
+
+  &__links {
+    display: none;
+
+    @include breakpoint-down("lg") {
+      animation: slideUp 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    }
+
+    @include breakpoint-down("lg") {
+      .navbar--is-open & {
+        display: flex;
+        flex-direction: column;
+        padding: 24px 34px;
+        background: linear-gradient(
+          144.39deg,
+          #ffffff -278.56%,
+          #6d6d6d -78.47%,
+          #11101d 91.61%
+        );
+        border-radius: 12px;
+        text-align: center;
+        z-index: 999;
+        position: absolute;
+        top: 120%;
+        right: 0;
+
+        // @media (min-width: map-get($breakpoints-up, "md")) {
+        //   right: 64px;
+        // }
+
+        > :not([hidden]) ~ :not([hidden]) {
+          margin-top: 16px;
+        }
+      }
+    }
+
+    @include breakpoint-up("lg") {
+      display: flex;
+
+      > :not([hidden]) ~ :not([hidden]) {
+        margin-left: 56px;
+      }
+    }
+  }
+
+  &__link {
+    color: #bfbfbf;
+
+    &:hover,
+    &--active {
+      color: white;
+    }
+  }
+}

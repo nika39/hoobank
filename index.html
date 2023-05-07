@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hoobank</title>
+    <link rel="stylesheet" href="/src/styles/global.scss" />
+  </head>
+  <body>
+    <div class="light-boundary">
+      <header>
+        <nav class="navbar">
+          <div class="padding">
+            <div class="container">
+              <a class="navbar__logo" href="#">
+                <img src="./src/assets/images/logo.svg" alt="logo" />
+              </a>
+              <button class="navbar__toggler">
+                <svg
+                  class="navbar__toggler-bars"
+                  width="1em"
+                  height="1em"
+                  fill="white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M0 88C0 74.7 10.7 64 24 64H424c13.3 0 24 10.7 24 24s-10.7 24-24 24H24C10.7 112 0 101.3 0 88zM64 248c0-13.3 10.7-24 24-24H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H88c-13.3 0-24-10.7-24-24zM448 408c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24H424c13.3 0 24 10.7 24 24z"
+                  />
+                </svg>
+                <svg
+                  class="navbar__toggler-x"
+                  width="1em"
+                  height="1em"
+                  fill="white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 320 512"
+                >
+                  <path
+                    d="M315.3 411.3c-6.253 6.253-16.37 6.253-22.63 0L160 278.6l-132.7 132.7c-6.253 6.253-16.37 6.253-22.63 0c-6.253-6.253-6.253-16.37 0-22.63L137.4 256L4.69 123.3c-6.253-6.253-6.253-16.37 0-22.63c6.253-6.253 16.37-6.253 22.63 0L160 233.4l132.7-132.7c6.253-6.253 16.37-6.253 22.63 0c6.253 6.253 6.253 16.37 0 22.63L182.6 256l132.7 132.7C321.6 394.9 321.6 405.1 315.3 411.3z"
+                  />
+                </svg>
+              </button>
+              <div class="navbar__links">
+                <a class="navbar__link navbar__link--active" href="#">Home</a>
+                <a class="navbar__link" href="#">Features</a>
+                <a class="navbar__link" href="#">Product</a>
+                <a class="navbar__link" href="#">Clients</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="hero">
+          <div class="container">
+            <section class="hero__body">
+              <div class="hero__discount bg-gradient bg-gradient--dark">
+                <img src="./src/assets/images/discount.svg" alt="discount" />
+                <div class="hero__discount-text">
+                  <span>20%</span> Discount for <span>1 Month</span> Account
+                </div>
+              </div>
+              <div>
+                <div class="hero__heading-1-wrapper">
+                  <h1 class="hero__heading">
+                    The Next
+                    <span class="text-gradient">Generation</span>
+                  </h1>
+                  <div
+                    class="hero__action hero__action--primary bg-gradient bg-gradient--aqua"
+                  >
+                    <a class="hero__action-link" href="#">
+                      <span class="text-gradient">
+                        Get
+                        <img
+                          src="./src/assets/images/arrow-up.svg"
+                          alt="arrow-up"
+                        />
+                      </span>
+                      <span class="text-gradient">Started</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="hero__heading">Payment Method.</div>
+                <p class="hero__meta">
+                  Our team of experts uses a methodology to identify the credit
+                  cards most likely to fit your needs. We examine annual
+                  percentage rates, annual fees.
+                </p>
+              </div>
+            </section>
+            <section class="hero__img-wrapper">
+              <img src="./src/assets/images/robot.png" alt="robot" />
+              <div class="hero__gradient hero__gradient--1"></div>
+              <div class="hero__gradient hero__gradient--2"></div>
+              <div class="hero__gradient hero__gradient--3"></div>
+            </section>
+            <div
+              class="hero__action hero__action--secondary bg-gradient bg-gradient--aqua"
+            >
+              <a class="hero__action-link" href="#">
+                <span class="text-gradient">
+                  Get
+                  <img src="./src/assets/images/arrow-up.svg" alt="arrow-up" />
+                </span>
+                <span class="text-gradient">Started</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="padding">
+        <div class="container">
+          <div class="section section--stats">
+            <div class="statistics-container">
+              <div class="statistics">
+                <div class="statistics__digit">3800+</div>
+                <div class="statistics__name text-gradient">User Active</div>
+              </div>
+              <div class="stats__divider"></div>
+              <div class="statistics">
+                <div class="statistics__digit">230+</div>
+                <div class="statistics__name text-gradient">
+                  Trusted by company
+                </div>
+              </div>
+              <div class="stats__divider"></div>
+              <div class="statistics">
+                <div class="statistics__digit">$230M+</div>
+                <div class="statistics__name text-gradient">Transaction</div>
+              </div>
+            </div>
+          </div>
+          <div class="section section--features">
+            <div class="offer">
+              <h2 class="offer__title">
+                You do the business, we’ll handle the money.
+              </h2>
+              <p class="offer__meta">
+                With the right credit card, you can improve your financial life
+                by building credit, earning rewards and saving money. But with
+                hundreds of credit cards on the market.
+              </p>
+              <button class="button bg-gradient bg-gradient--aqua">
+                Get Started
+              </button>
+            </div>
+            <div class="features">
+              <div class="feature">
+                <div class="feature__icon">
+                  <div class="feature__icon-circle">
+                    <svg
+                      width="32"
+                      height="30"
+                      viewBox="0 0 33 32"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M25.4696 19.7122C25.0552 20.1138 24.8648 20.6946 24.9592 21.2642L26.3816 29.1362C26.5016 29.8034 26.22 30.4786 25.6616 30.8642C25.1144 31.2642 24.3864 31.3122 23.7896 30.9922L16.7032 27.2962C16.4568 27.165 16.1832 27.0946 15.9032 27.0866H15.4696C15.3192 27.109 15.172 27.157 15.0376 27.2306L7.94959 30.9442C7.59919 31.1202 7.20239 31.1826 6.81359 31.1202C5.86639 30.941 5.23439 30.0386 5.38959 29.0866L6.81359 21.2146C6.90799 20.6402 6.71759 20.0562 6.30319 19.6482L0.525591 14.0482C0.042391 13.5794 -0.125609 12.8754 0.095191 12.2402C0.309591 11.6066 0.856791 11.1442 1.51759 11.0402L9.46959 9.88663C10.0744 9.82423 10.6056 9.45623 10.8776 8.91223L14.3816 1.72823C14.4648 1.56823 14.572 1.42103 14.7016 1.29623L14.8456 1.18423C14.9208 1.10103 15.0072 1.03223 15.1032 0.976232L15.2776 0.912232L15.5496 0.800232H16.2232C16.8248 0.862632 17.3544 1.22263 17.6312 1.76023L21.1816 8.91223C21.4376 9.43543 21.9352 9.79863 22.5096 9.88663L30.4616 11.0402C31.1336 11.1362 31.6952 11.6002 31.9176 12.2402C32.1272 12.8818 31.9464 13.5858 31.4536 14.0482L25.4696 19.7122Z"
+                        fill="#00F6FF"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="feature__body">
+                  <h4 class="feature__title">Rewards</h4>
+                  <p class="feature__desctiption">
+                    The best credit cards offer some tantalizing combinations of
+                    promotions and prizes
+                  </p>
+                </div>
+              </div>
+              <div class="feature">
+                <div class="feature__icon">
+                  <div class="feature__icon-circle">
+                    <svg
+                      width="28"
+                      height="32"
+                      viewBox="0 0 28 32"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M13.5649 31.8619C13.7421 31.9544 13.9402 32.0015 14.1384 31.9999C14.3365 31.9984 14.533 31.9497 14.7118 31.8556L20.4204 28.8039C22.0392 27.941 23.3069 26.9761 24.2959 25.8527C26.4463 23.4051 27.6206 20.2813 27.5997 17.0602L27.532 6.43517C27.5256 5.21138 26.7218 4.11938 25.533 3.72243L14.9131 0.159303C14.2737 -0.0572148 13.573 -0.0525079 12.9448 0.170286L2.36516 3.8605C1.18284 4.27314 0.393559 5.37298 0.400003 6.59834L0.467655 17.2155C0.488595 20.4413 1.70312 23.551 3.88895 25.9735C4.88764 27.0812 6.1666 28.032 7.80315 28.8808L13.5649 31.8619ZM12.0537 19.3743C12.2921 19.6034 12.6014 19.7163 12.9106 19.7132C13.2199 19.7116 13.5276 19.5955 13.7627 19.3633L20.0013 13.213C20.47 12.7501 20.4652 12.0064 19.9916 11.5498C19.5164 11.0933 18.7513 11.0964 18.2826 11.5593L12.8929 16.8718L10.6861 14.7505C10.211 14.294 9.44745 14.2987 8.9771 14.7615C8.50837 15.2244 8.5132 15.9681 8.98838 16.4246L12.0537 19.3743Z"
+                        fill="#00F6FF"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="feature__body">
+                  <h4 class="feature__title">100% Secured</h4>
+                  <p class="feature__desctiption">
+                    We take proactive steps make sure your information and
+                    transactions are secure.
+                  </p>
+                </div>
+              </div>
+              <div class="feature">
+                <div class="feature__icon">
+                  <div class="feature__icon-circle">
+                    <svg
+                      width="32"
+                      height="30"
+                      viewBox="0 0 33 32"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M31.4966 0.931172C30.6963 0.109757 29.5118 -0.196261 28.4074 0.125863L2.65282 7.61524C1.48754 7.93897 0.661604 8.8683 0.439113 10.0489C0.21182 11.2504 1.00574 12.7757 2.04297 13.4135L10.0959 18.3629C10.9218 18.8702 11.9878 18.743 12.6713 18.0537L21.8927 8.77488C22.3569 8.2917 23.1252 8.2917 23.5894 8.77488C24.0536 9.24196 24.0536 9.99895 23.5894 10.4821L14.352 19.7625C13.6669 20.4503 13.5389 21.5213 14.0431 22.3524L18.9635 30.486C19.5397 31.4524 20.5321 32 21.6206 32C21.7486 32 21.8927 32 22.0207 31.9839C23.2693 31.8228 24.2617 30.9692 24.6298 29.7612L32.2649 4.03967C32.6011 2.94445 32.297 1.75259 31.4966 0.931172"
+                        fill="#00F6FF"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="feature__body">
+                  <h4 class="feature__title">Balance Transfer</h4>
+                  <p class="feature__desctiption">
+                    A balance transfer credit card can save you a lot of money
+                    in interest charges.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section section--product">
+            <div class="product product--t1">
+              <div class="product__image">
+                <img src="./src/assets/images/bill.png" alt="bill" />
+                <div class="product__gradient product__gradient--1"></div>
+                <div class="product__gradient product__gradient--2"></div>
+              </div>
+              <div class="product__body">
+                <h2 class="product__title">
+                  Easily control your billing & invoicing.
+                </h2>
+                <p class="product__description">
+                  Elit enim sed massa etiam. Mauris eu adipiscing ultrices
+                  ametodio aenean neque. Fusce ipsum orci rhoncus aliporttitor
+                  integer platea placerat.
+                </p>
+                <div class="product__actions">
+                  <div class="product__action product__action--google">
+                    <a href="#">
+                      <img
+                        src="./src/assets/images/google.svg"
+                        alt="play store"
+                      />
+                    </a>
+                  </div>
+                  <div class="product__action product__action--apple">
+                    <a href="#">
+                      <img
+                        src="./src/assets/images/apple.svg"
+                        alt="app store"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product product--t2">
+              <div class="product__body">
+                <h2 class="product__title">
+                  Find a better card deal in few easy steps.
+                </h2>
+                <p class="product__description">
+                  Arcu tortor, purus in mattis at sed integer faucibus. Aliquet
+                  quis aliquet eget mauris tortor.ç Aliquet ultrices ac, ametau.
+                </p>
+                <div class="product__actions">
+                  <a href="#" class="button bg-gradient bg-gradient--aqua">
+                    Get Started
+                  </a>
+                </div>
+              </div>
+              <div class="product__image">
+                <img src="./src/assets/images/card.png" alt="bill" />
+              </div>
+            </div>
+          </div>
+          <div class="section section--clients">
+            <div class="clients">
+              <div class="clients__header">
+                <h2 class="clients__headline">
+                  What people are <br />
+                  saying about us
+                </h2>
+                <p class="clients__meta">
+                  Everything you need to accept card payments and grow your
+                  business anywhere on the planet.
+                </p>
+              </div>
+              <div class="clients__container">
+                <div class="client">
+                  <div class="client__quotes">
+                    <img src="./src/assets/images/quotes.svg" alt="quotes" />
+                  </div>
+                  <p class="client__body">
+                    Money is only a tool. It will take you wherever you wish,
+                    but it will not replace you as the driver.
+                  </p>
+                  <div class="client__header">
+                    <div class="client__image">
+                      <img
+                        src="./src/assets/images/people01.png"
+                        alt="people01"
+                      />
+                    </div>
+                    <div class="client__meta">
+                      <h4 class="client__name">Herman Jensen</h4>
+                      <p class="client__position">Founder & Leader</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="client">
+                  <div class="client__quotes">
+                    <img src="./src/assets/images/quotes.svg" alt="quotes" />
+                  </div>
+                  <p class="client__body">
+                    Money is only a tool. It will take you wherever you wish,
+                    but it will not replace you as the driver.
+                  </p>
+                  <div class="client__header">
+                    <div class="client__image">
+                      <img
+                        src="./src/assets/images/people02.png"
+                        alt="people02"
+                      />
+                    </div>
+                    <div class="client__meta">
+                      <h4 class="client__name">Herman Jensen</h4>
+                      <p class="client__position">Founder & Leader</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="client">
+                  <div class="client__quotes">
+                    <img src="./src/assets/images/quotes.svg" alt="quotes" />
+                  </div>
+                  <p class="client__body">
+                    Money is only a tool. It will take you wherever you wish,
+                    but it will not replace you as the driver.
+                  </p>
+                  <div class="client__header">
+                    <div class="client__image">
+                      <img
+                        src="./src/assets/images/people03.png"
+                        alt="people03"
+                      />
+                    </div>
+                    <div class="client__meta">
+                      <h4 class="client__name">Herman Jensen</h4>
+                      <p class="client__position">Founder & Leader</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="client-logos">
+              <div class="client-logo">
+                <img src="./src/assets/images/airbnb.png" alt="airbnb" />
+              </div>
+              <div class="client-logo">
+                <img src="./src/assets/images/binance.png" alt="binance" />
+              </div>
+              <div class="client-logo">
+                <img src="./src/assets/images/coinbase.png" alt="coinbase" />
+              </div>
+              <div class="client-logo">
+                <img src="./src/assets/images/dropbox.png" alt="dropbox" />
+              </div>
+            </div>
+          </div>
+          <div class="section section--cta">
+            <div class="cta">
+              <div>
+                <h2 class="cta__title">Let’s try our service now!</h2>
+                <p class="cta__meta">
+                  Everything you need to accept card payments and grow your
+                  business anywhere on the planet.
+                </p>
+              </div>
+              <div class="cta__actions">
+                <a class="button bg-gradient--aqua" href="#">Get Started</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="padding">
+        <div class="container">
+          <div class="footer footer--primary">
+            <div class="footer__body">
+              <img
+                class="footer__logo"
+                src="./src/assets/images/logo.svg"
+                alt="logo"
+              />
+              <p class="footer__meta">
+                A new way to make the payments easy, reliable and secure.
+              </p>
+            </div>
+            <div class="footer__actions">
+              <div class="footer__links-container">
+                <h4 class="footer__links-title">Usefull Links</h4>
+                <div class="footer__links">
+                  <a class="footer__link" href="#">Content</a>
+                  <a class="footer__link" href="#">How it Works</a>
+                  <a class="footer__link" href="#">Create</a>
+                  <a class="footer__link" href="#">Explore</a>
+                  <a class="footer__link" href="#">Terms & Services</a>
+                </div>
+              </div>
+              <div class="footer__links-container">
+                <h4 class="footer__links-title">Community</h4>
+                <div class="footer__links">
+                  <a class="footer__link" href="#">Help Center</a>
+                  <a class="footer__link" href="#">Partners</a>
+                  <a class="footer__link" href="#">Suggestions</a>
+                  <a class="footer__link" href="#">Blog</a>
+                  <a class="footer__link" href="#">Newsletters</a>
+                </div>
+              </div>
+              <div class="footer__links-container">
+                <h4 class="footer__links-title">Partner</h4>
+                <div class="footer__links">
+                  <a class="footer__link" href="#">Our Partner</a>
+                  <a class="footer__link" href="#">Become a Partner</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer footer--secondary">
+            <div class="footer__body">2023 HooBank. All Rights Reserved.</div>
+            <div class="footer__links">
+              <a class="footer__link" href="#" target="_blank">
+                <img src="./src/assets/images/instagram.svg" alt="instagram" />
+              </a>
+              <a class="footer__link" href="#" target="_blank">
+                <img src="./src/assets/images/facebook.svg" alt="facebook" />
+              </a>
+              <a class="footer__link" href="#" target="_blank">
+                <img src="./src/assets/images/twitter.svg" alt="twitter" />
+              </a>
+              <a class="footer__link" href="#" target="_blank">
+                <img src="./src/assets/images/linkedin.svg" alt="linkedin" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

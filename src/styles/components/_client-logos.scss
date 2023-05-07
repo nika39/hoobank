@@ -1,0 +1,11 @@
+.client-logos {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 84px -6px 0;
+
+  @include breakpoint-up("sm") {
+    margin: 84px -16px 0;
+  }
+}

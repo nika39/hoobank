@@ -1,0 +1,58 @@
+.cta {
+  padding: 36px;
+  border-radius: 20px;
+  background: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint-up("md") {
+    padding: 48px;
+  }
+
+  @include breakpoint-up("xl") {
+    padding: 74px;
+  }
+
+  @include breakpoint-up("md") {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 140%;
+    margin-bottom: 16px;
+
+    @include breakpoint-up("md") {
+      margin-bottom: 24px;
+      font-size: 48px;
+    }
+  }
+
+  &__meta {
+    max-width: 470px;
+    font-size: 18px;
+    line-height: 160%;
+    letter-spacing: 0.01em;
+    color: var(--color-silver);
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    margin-top: 24px;
+
+    @include breakpoint-up("md") {
+      margin-top: 0;
+      margin-left: 24px;
+    }
+  }
+}

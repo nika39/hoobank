@@ -1,0 +1,77 @@
+.clients {
+  &__header {
+    display: flex;
+    align-items: center;
+
+    @include breakpoint-down("lg") {
+      flex-direction: column;
+    }
+  }
+
+  &__headline {
+    width: 100%;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 140%;
+
+    @include breakpoint-up("md") {
+      font-size: 40px;
+      line-height: 160%;
+    }
+
+    @include breakpoint-up("xl") {
+      font-size: 48px;
+    }
+
+    br {
+      @include breakpoint-down("lg") {
+        display: none;
+      }
+    }
+  }
+
+  &__meta {
+    width: 100%;
+    font-size: 18px;
+    line-height: 170%;
+    color: var(--color-silver);
+
+    @include breakpoint-down("lg") {
+      margin-top: 24px;
+    }
+
+    @include breakpoint-down("md") {
+      margin-top: 8px;
+    }
+
+    @include breakpoint-up("lg") {
+      margin-left: 24px;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 64px;
+
+    @include breakpoint-down("lg") {
+      > :not([hidden]) {
+        width: 50%;
+      }
+
+      > :not([hidden]) ~ :not([hidden]) {
+        margin-top: 24px;
+      }
+    }
+
+    @include breakpoint-down("md") {
+      > :not([hidden]) {
+        width: 100%;
+      }
+    }
+
+    @include breakpoint-up("lg") {
+      justify-content: space-between;
+    }
+  }
+}
